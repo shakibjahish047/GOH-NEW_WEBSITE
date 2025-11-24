@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYDIR=/home/gohabsyp/public_html
+    - cp -r * $DEPLOYDIR
