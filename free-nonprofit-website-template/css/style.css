@@ -1574,3 +1574,103 @@
     height: auto;
   }
 }
+/* ------------------------------
+   FIX: Navbar & Logo on Mobile
+--------------------------------*/
+@media (max-width: 768px) {
+    .navbar-brand {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .navbar-brand img {
+        height: 45px !important;
+        width: auto;
+    }
+
+    .navbar-brand h1 {
+        font-size: 1.1rem !important;
+        white-space: nowrap;
+        margin-left: 6px;
+    }
+}
+
+
+/* ------------------------------
+   FIX: Do NOT force all rows vertical
+--------------------------------*/
+@media (max-width: 768px) {
+    /* REMOVE global forced stacking */
+    .row, .d-flex {
+        flex-direction: initial !important;
+        align-items: initial !important;
+    }
+
+    /* Correct stacking for sections that actually need column layout */
+    .about .row,
+    .donate .row,
+    .team .row,
+    .testimonial .row {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+}
+
+
+/* ------------------------------
+   FIX: Filter Buttons Wrapping
+--------------------------------*/
+@media (max-width: 768px) {
+    .mb-4 {
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+    }
+}
+
+
+/* ------------------------------
+   FIX: Carousel Text Too Big
+--------------------------------*/
+@media (max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 1.5rem !important;
+        line-height: 1.8rem !important;
+        padding: 0 15px;
+    }
+}
+
+
+/* ------------------------------
+   FIX: Project Cards Grid
+--------------------------------*/
+@media (max-width: 768px) {
+    #project-list .col-md-6, 
+    #project-list .col-lg-4 {
+        width: 100% !important;
+    }
+}
+/* ------------------------------------
+   FIX FOUNDER IMAGE TOO SMALL ON MOBILE
+--------------------------------------*/
+@media (max-width: 768px) {
+    .goho-bio-photo img {
+        width: 100% !important;
+        max-width: 350px !important;
+        height: auto !important;
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Fix the grid squeezing the image */
+    .goho-bio-container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .goho-bio-text {
+        text-align: center !important;
+    }
+}
