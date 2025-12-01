@@ -644,18 +644,29 @@
 /* Custom per page */
 .projects-header {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("../img/project_header.webp") center center/cover no-repeat;
+              url("../img/8.jpg") center center/cover no-repeat;
 
 }
 
 .founder-header {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("../img/project_header.webp") center center/cover no-repeat;
+              url("../img/8.jpg") center center/cover no-repeat;
+  position: relative;
+  padding: 200px 0; /* controls header height */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; /* this is the magic */
+
 }
 
 .serve-header {
   background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-              url("../img/serve-header.jpg") center center/cover no-repeat;
+              url("../img/8.jpg") center center/cover no-repeat;
+  position: relative;
+  padding: 200px 0; /* controls header height */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; /* this is the magic */
 }
 .page-header {
   position: relative;
@@ -1673,4 +1684,7 @@
     .goho-bio-text {
         text-align: center !important;
     }
+}
+.founder-message p {
+    text-align: justify;
 }
