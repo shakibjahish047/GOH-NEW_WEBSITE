@@ -446,6 +446,24 @@
     color: var(--primary);
 }
 
+.qr-standard img {
+    width: 120px;      
+    height: 120px; 
+    margin-top: 30px;  
+    object-fit: cover; 
+    border: 2px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
+    transition: transform 0.3s ease;
+}
+
+
+.qr-standard img:hover {
+    transform: scale(1.1);
+}
+
+
+
 /* Footer Responsive Styles */
 @media (max-width: 992px) {
     .footer .row > div {
@@ -1329,6 +1347,7 @@ url("../img/women-header.jpg") center center/cover no-repeat;
     color:#FF6F0F;
     margin-left:80px;
     margin-top:10%;
+    font-family:Arial, Helvetica, sans-serif ;
 }
 
 
@@ -1339,6 +1358,7 @@ url("../img/women-header.jpg") center center/cover no-repeat;
     margin: 10px 0 20px;
     color: white;
     margin-left: 10%;
+ padding-top: 20px;
  
 }
 
@@ -1347,7 +1367,7 @@ url("../img/women-header.jpg") center center/cover no-repeat;
     font-style: italic;
     padding-left: 15px;
     border-left: 3px solid #FF6F0F;
-    color: #FF6F0F;
+    color: #f8f7f7;
     margin-left:80px;
   
 }
@@ -1378,20 +1398,22 @@ url("../img/women-header.jpg") center center/cover no-repeat;
 }
 
 /* Founder Message */
-.founder-message {
-    background-color: #ddd;
-    text-align: center;
-    font-size: 1.2rem;
-    color: #000000;
-
-   
-    padding-left: 15px;
-    
+.founder-message-wrapper {
+    text-align: center; /* والد وسط‌چین */
+    padding: 15px;
 }
 
-
-
-
+.founder-message {
+    display: inline-block;   /* بلوک داخل والد وسط‌چین */
+    text-align: left;        /* متن داخل خودش چپ‌چین شود */
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #ddd;
+    padding: 15px;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+}
 /* Founder Activities */
 .founder-activities {
     display: grid;
