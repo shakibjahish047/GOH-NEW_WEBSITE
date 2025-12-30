@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>News - Gate Of Hope Organization</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-  <link href="img/logo.png" rel="icon">
+   <meta charset="utf-8">
+    <title>Whom We Serve - Gate Of Hope Organizatiom</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
-  <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="icon">
 
-  <!-- Libraries -->
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap" rel="stylesheet"> 
 
-  <!-- Bootstrap & Main CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-  <style>
-    /* Optional: Custom hero background for News page */
-    .hero-section {
-      background: url("img/news-hero.jpg") center center / cover no-repeat;
-      position: relative;
-    }
-    .hero-section::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.55);
-    }
-    .hero-section .container {
-      position: relative;
-      z-index: 2;
-    }
-  </style>
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Navbar Start -->
+     <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
 <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
     <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
         <div class="col-lg-6 px-5 text-start">
@@ -71,13 +67,13 @@
         
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="index.html" class="nav-item nav-link ">Home</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Who We Are</a>
                     <div class="dropdown-menu m-0">
                         <a href="founder.html" class="dropdown-item">Founder Profile</a>
                         <a href="vision.html" class="dropdown-item">Our Vision And Values</a>
-                        <a href="we_serve.html" class="dropdown-item">Whom We Serve</a>
+                        <a href="we_serve.html" class="dropdown-item active">Whom We Serve</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
@@ -90,15 +86,11 @@
                 </div>
                 <a href="projects.html" class="nav-item nav-link">Projects</a>
                 <a href="Polices.html" class="nav-item nav-link">Policies</a>
-                <div class="nav-item dropdown">
-                <a href="underdeveloping.html" class="nav-link dropdown-toggle" id="mediaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Media & Publication
-                </a>
-                <div class="dropdown-menu m-0" aria-labelledby="mediaDropdown">
-                <a href="underdeveloping.html" class="dropdown-item">News</a>
-               <a href="underdeveloping.html" class="dropdown-item">Upcoming Events</a>
-                   <a href="underdeveloping.html" class="dropdown-item">Success Story</a>
+              <div class="nav-item dropdown">
+                   <a href="media.html" class="nav-item nav-link">Media and publication</a>
+                
                </div>
+             
                </div>
 
         <script>
@@ -132,19 +124,15 @@
     </nav>
 </div>
 <!-- Navbar End -->
-
-
-  <!-- Hero Start -->
-  <div class="container-fluid py-5 mb-5 wow fadeIn hero-section" data-wow-delay="0.1s">
-    <div class="container text-center py-5">
-      <h1 class="display-4 text-white animated slideInDown mb-3">News & Updates</h1>
-      <p class="text-white-50">Stay connected with our latest work, community impact, and organizational milestones.</p>
+  <!-- Page Header -->
+   <div class="container-fluid serve-header mb-5">
+    <div class="container text-center">
+      <h1 class="display-4 text-white"></h1>
     </div>
+   </div>
   </div>
-  <!-- Hero End -->
 
-
-  <!-- Featured News Start -->
+  <!-- Featured News Start 
   <div class="container py-5">
     <div class="text-center mb-5">
       <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Featured Story</div>
@@ -160,19 +148,61 @@
       </div>
     </div>
   </div>
+-->
+
+<section class="news-section-wrapper">
+
+  <div class="news-container">
+
+    <h2 class="news-section-title">Latest News</h2>
+
+    <div class="news-cards">
+
+      <div class="news-card">
+        <h3 class="news-card-title">Community Workshop Completed</h3>
+        <p class="news-card-text">
+          Our recent community workshop focused on empowering women and children.
+          Participants learned new skills and shared their experiences.
+        </p>
+        <a href="news1.html" class="news-card-link">Read More</a>
+      </div>
+
+      <div class="news-card">
+        <h3 class="news-card-title">New Project Launch</h3>
+        <p class="news-card-text">
+          We have launched a new project aimed at improving education in rural areas.
+          This initiative will benefit hundreds of children.
+        </p>
+        <a href="news2.html" class="news-card-link">Read More</a>
+      </div>
+
+      <div class="news-card">
+        <h3 class="news-card-title">Volunteer Recognition</h3>
+        <p class="news-card-text">
+          Celebrating our dedicated volunteers who have contributed to community development
+          and humanitarian support.
+        </p>
+        <a href="news3.html" class="news-card-link">Read More</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
   <!-- Featured News End -->
 
 
-  <!-- News Cards Start -->
+  <!-- News Cards Start 
   <div class="container-xxl bg-light py-5">
     <div class="container">
       <div class="text-center mx-auto mb-5" style="max-width: 500px;">
         <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">Latest News</div>
         <h1 class="display-6 mb-4">Read Our Recent Updates</h1>
-      </div>
+      </div>-->
 
-      <div class="row g-4">
-        <!-- News 1 -->
+      <!-- N <div class="row g-4">
+      
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
           <div class="blog-item bg-white rounded overflow-hidden shadow-sm">
             <img class="img-fluid" src="img/gallery/youth day.jpg" alt="">
@@ -187,7 +217,6 @@
           </div>
         </div>
 
-        <!-- News 2 -->
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
           <div class="blog-item bg-white rounded overflow-hidden shadow-sm">
             <img class="img-fluid" src="img/gallery/science day.jpg" alt="">
@@ -202,7 +231,6 @@
           </div>
         </div>
 
-        <!-- News 3 -->
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
           <div class="blog-item bg-white rounded overflow-hidden shadow-sm">
             <img class="img-fluid" src="img/gallery/3.jpg" alt="">
@@ -220,9 +248,8 @@
     </div>
   </div>
   
-  <!-- News Cards End -->
-
-    <!-- News Cards Start -->
+ 
+ 
   <div class="container-xxl bg-light py-5">
     <div class="container">
       <div class="text-center mx-auto mb-5" style="max-width: 500px;">
@@ -230,7 +257,7 @@
       </div>
 
       <div class="row g-4">
-        <!-- News 1 -->
+        >
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
           <div class="blog-item bg-white rounded overflow-hidden shadow-sm">
             <img class="img-fluid" src="img/gallery/1.jpg" alt="">
@@ -245,7 +272,7 @@
           </div>
         </div>
 
-        <!-- News 2 -->
+
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
           <div class="blog-item bg-white rounded overflow-hidden shadow-sm">
             <img class="img-fluid" src="img/gallery/training.jpg" alt="">
@@ -260,7 +287,7 @@
           </div>
         </div>
 
-        <!-- News 3 -->
+   
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
           <div class="blog-item bg-white rounded overflow-hidden shadow-sm">
             <img class="img-fluid" src="img/gallery/2.jpg" alt="">
@@ -277,8 +304,8 @@
       </div>
     </div>
   </div>
-  
-  <!-- News Cards End -->
+ -->
+<!-- News Section -->
 
 
   <!-- Footer Start -->
