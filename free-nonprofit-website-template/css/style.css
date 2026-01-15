@@ -446,21 +446,6 @@
     color: var(--primary);
 }
 
-.qr-standard img {
-    width: 120px;      
-    height: 120px; 
-    margin-top: 30px;  
-    object-fit: cover; 
-    border: 2px solid #ddd; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2); 
-    transition: transform 0.3s ease;
-}
-
-
-.qr-standard img:hover {
-    transform: scale(1.1);
-}
 
 
 
@@ -2326,4 +2311,18 @@ font-weight: 600;
   }
 }
 
+
+.qr-standard img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.qr-standard img:hover {
+    transform: scale(1.1);
+}
 
